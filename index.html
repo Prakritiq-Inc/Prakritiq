@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakritiq Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green-dark: #0B6E4F;
+      --green-soft: #A1D490;
+      --charcoal: #1A1A1A;
+      --offwhite: #F6F7F5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--offwhite);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 5rem 8vw;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      color: var(--green-dark);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      max-width: 700px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: var(--green-soft);
+      margin: 3rem 0;
+      opacity: 0.6;
+    }
+
+    .tag {
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--green-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    footer {
+      padding: 3rem 8vw;
+      background-color: var(--charcoal);
+      color: var(--offwhite);
+    }
+
+    footer p {
+      max-width: none;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+      section { padding: 4rem 6vw; }
+    }
+  
+    /* Dark mode variables */
+    body.dark {
+      --green-dark: #7AE3B1;
+      --green-soft: #2F7F64;
+      --charcoal: #EAEAEA;
+      --offwhite: #0E1110;
+      background-color: var(--offwhite);
+      color: var(--charcoal);
+    }
+
+    .toggle {
+      position: fixed;
+      top: 1.5rem;
+      right: 2rem;
+      padding: 0.4rem 0.8rem;
+      border: 1px solid var(--green-soft);
+      background: transparent;
+      color: var(--green-dark);
+      font-size: 0.85rem;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle" onclick="document.body.classList.toggle('dark')">Toggle</button>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="tag">Prakritiq Inc.</div>
+    <h1>Sustainability, built into how things work.</h1>
+    <p>
+      Prakritiq develops sustainability technologies that integrate seamlessly into everyday operations — without friction, enforcement, or greenwashing.
+    </p>
+    <p>
+      We believe sustainability should be part of who organizations are, not something they do out of obligation.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROBLEM -->
+  <section>
+    <h2>Sustainability is treated as an afterthought.</h2>
+    <p>
+      In most organizations, sustainability exists as a separate layer — CSR initiatives, compliance checklists, and annual reports. It is rarely embedded into daily operations.
+    </p>
+    <p>
+      When sustainability adds friction or disrupts workflows, adoption suffers. What begins as intention slowly becomes obligation.
+    </p>
+    <p><strong>Sustainability fails when it feels like extra work.</strong></p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- BELIEF -->
+  <section>
+    <h2>Sustainability should not be a department.</h2>
+    <p>
+      At Prakritiq, we believe sustainability works best when it is invisible in use, integrated by design, and effortless to adopt.
+    </p>
+    <p>
+      The most effective sustainable technologies are the ones people don’t have to think about.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- WHAT WE DO -->
+  <section>
+    <h2>What Prakritiq does</h2>
+    <p>
+      Prakritiq is a product-driven sustainability technology company.
+    </p>
+    <p>
+      We design and develop practical technologies that integrate into existing environments, require minimal operational change, and deliver measurable real-world impact.
+    </p>
+    <p>
+      We are not a consulting firm. We are not a reporting platform.
+    </p>
+    <p><strong>We build technology that quietly shifts sustainability from responsibility to default.</strong></p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PRODUCT -->
+  <section>
+    <h2>Our first product</h2>
+    <p><strong>Indoor CO₂ Reduction Device (In Development)</strong></p>
+    <p>
+      Our first product focuses on reducing indoor CO₂ concentration in enclosed environments. The goal is to improve air quality without infrastructure-heavy changes or constant user intervention.
+    </p>
+    <p>
+      The product is currently in early development, with technical feasibility under exploration and an MVP target of approximately 12 months.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- DIFFERENT -->
+  <section>
+    <h2>Designed for adoption, not enforcement</h2>
+    <p>
+      Most indoor air quality solutions depend on increased ventilation, high energy usage, or large infrastructure changes.
+    </p>
+    <p>
+      Prakritiq’s approach prioritizes seamless coexistence with existing systems, minimal maintenance, and adoption by default.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- WHO -->
+  <section>
+    <h2>Initial focus environments</h2>
+    <p>
+      Offices, educational institutions, enclosed professional environments, and research or lab-adjacent spaces.
+    </p>
+    <p>
+      These settings face clear indoor air quality challenges and are well-positioned to adopt early-stage sustainability technologies.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- VISION -->
+  <section>
+    <h2>Beyond a single product</h2>
+    <p>
+      The indoor CO₂ device is only the starting point.
+    </p>
+    <p>
+      Prakritiq’s long-term vision is to build a portfolio of sustainability technologies — each addressing a specific friction point that prevents adoption.
+    </p>
+    <p>
+      Sustainability becomes culture when technology removes resistance.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Prakritiq Inc.</strong></p>
+    <p>Embedding sustainability into everyday operations.</p>
+  </footer>
+
+</body>
+</html>
